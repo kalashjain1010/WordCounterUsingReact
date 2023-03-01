@@ -5,16 +5,22 @@ class Navbar extends React.Component {
   render() {
     return (
       <>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav
+          className="navbar navbar-expand-lg bg-body-tertiary"
+          data-bs-theme={this.props.mode}
+        >
           <div className="container-fluid">
-            <a className="navbar-brand" href="/"> Word Counter
+            <a className="navbar-brand" href="/">
+              {" "}
+              Word Counter
             </a>
 
             <div
               className="collapse navbar-collapse justify-content-end"
               id="navbarNav"
-            >
+             >
               <ul className="navbar-nav">
+                
                 <li className="nav-item">
                   <a className="nav-link active " aria-current="page" href="/">
                     Home
@@ -27,8 +33,24 @@ class Navbar extends React.Component {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/">
-                    Pricing
+                    About us
                   </a>
+                </li>
+                <li className="nav-item mx-5 ">
+                  <div className="form-check form-switch my-2">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label
+                      className="form-check-label"
+                      htmlFor="flexSwitchCheckDefault"
+                    >
+                      Enable dark mode
+                    </label>
+                  </div>
                 </li>
               </ul>
             </div>
