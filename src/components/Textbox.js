@@ -25,7 +25,7 @@ export default function Textbox(props) {
   const [text, setText] = useState("");
   return (
     <>
-      <div className="heading  mt-5 mx-5 ">Enter Text Below</div>
+      <div className="heading  mt-5 mx-5"  > Enter Text Below</div>
       <div className="form-floating mt-1  mx-5">
         <textarea
           className="form-control w-75 p-3 "
