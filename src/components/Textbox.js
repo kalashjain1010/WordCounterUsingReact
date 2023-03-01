@@ -25,7 +25,7 @@ export default function Textbox(props) {
   const [text, setText] = useState("");
   return (
     <>
-      <div className="heading  mt-5 mx-5"  > Enter Text Below</div>
+      <div className="heading  mt-5 mx-5"  style={{color: props.mode==="light"?"black" :"white"}}> Enter Text Below</div>
       <div className="form-floating mt-1  mx-5">
         <textarea
           className="form-control w-75 p-3 "
@@ -59,7 +59,7 @@ export default function Textbox(props) {
           </button>
         </div>
       </div>
-      <div className="mx-5 my-3">
+      <div className="mx-5 my-3" style={{color: props.mode==="light"?"black" :"white"}}>
         <h3> counting words and characters</h3>
         {text.split(" ").filter((word) => word !== "").length} words and{" "}
         {text.length} Characters

@@ -21,12 +21,12 @@ export default function Textbox(props) {
 //     console.log("clicked DFSDGAFDAASF");
 //     setText(event.target.value);
 //   };
-
-//   const [text, setText] = useState("");
+  console.log(props.mode)
   return (
     <>
-      <div className="heading  mt-5 mx-5" style={{color: props.mode==="light"?"black" :"white"}}  > Enter Text Below</div>
-      
+        <div className="heading  mt-5 mx-5" style={{color: props.mode==="light"?"black" :"white"}}  >
+           Enter Text Below</div>
+        {/* <div style={color: "red"} > text here </div> */}
     </>
   );
 }
